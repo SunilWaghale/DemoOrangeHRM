@@ -2,7 +2,7 @@ import configparser
 
 config = configparser.RawConfigParser()
 
-config.read("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Configuration\\config.ini")
+config.read("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Configuration\\config.ini")
 
 
 class ReadValue():

@@ -11,7 +11,7 @@ from utilities.Readconfigfile import ReadValue
 class Test_Login_DDT:
     Url = ReadValue.getUrl()
     log = LogGen.loggen()
-    path = "C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\TestData\\LoginData.xlsx"
+    path = "D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\TestData\\LoginData.xlsx"
 
     @pytest.mark.regression
     def test_login_ddt_004(self,setup,getDataForLogin):
@@ -38,7 +38,7 @@ class Test_Login_DDT:
             if self.lp.login_status() == True:
                 if self.Exp_Stauts == "Pass":
                     login_stauts.append("Pass")
-                    self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_login_params_003_pass.png")
+                    self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_login_params_003_pass.png")
                     self.lp.Click_Menu_Button()
                     self.log.info("Click on menu button")
                     self.lp.Click_logout_Button()
@@ -46,7 +46,7 @@ class Test_Login_DDT:
                     XLutils.writeData(self.path, 'Sheet1', r, 4, "Pass")
                 elif self.Exp_Stauts == "Fail":
                     login_stauts.append("Fail")
-                    self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_login_params_003_pass.png")
+                    self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_login_params_003_pass.png")
                     self.lp.Click_Menu_Button()
                     self.log.info("Click on menu button")
                     self.lp.Click_logout_Button()
@@ -57,11 +57,11 @@ class Test_Login_DDT:
             else:
                 if self.Exp_Stauts == "Fail":
                     login_stauts.append("Pass")
-                    self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_login_params_003_fail.png")
+                    self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_login_params_003_fail.png")
                     XLutils.writeData(self.path, 'Sheet1', r, 4, "Fail")
                 elif self.Exp_Stauts == "Pass":
                     login_stauts.append("Fail")
-                    self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_login_params_003_fail.png")
+                    self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_login_params_003_fail.png")
                     XLutils.writeData(self.path, 'Sheet1', r, 4, "Fail")
             print(login_stauts)
 

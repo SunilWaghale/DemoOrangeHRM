@@ -28,14 +28,14 @@ class Test_Login_Params:
         if self.lp.login_status() == True:
             if getDataForLogin[2] == "Pass":
                 login_stauts.append("Pass")
-                self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_login_params_003_pass.png")
+                self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_login_params_003_pass.png")
                 self.lp.Click_Menu_Button()
                 self.log.info("Click on menu button")
                 self.lp.Click_logout_Button()
                 self.log.info("Click on logout button")
             elif getDataForLogin[2] == "Fail":
                 login_stauts.append("Fail")
-                self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_login_params_003_pass.png")
+                self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_login_params_003_pass.png")
                 self.lp.Click_Menu_Button()
                 self.log.info("Click on menu button")
                 self.lp.Click_logout_Button()
@@ -45,10 +45,10 @@ class Test_Login_Params:
         else:
             if getDataForLogin[2] == "Fail":
                 login_stauts.append("Pass")
-                self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_login_params_003_fail.png")
+                self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_login_params_003_fail.png")
             elif getDataForLogin[2] == "Pass":
                 login_stauts.append("Fail")
-                self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_login_params_003_fail.png")
+                self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_login_params_003_fail.png")
         print(login_stauts)
 
         if "Fail" not in login_stauts:

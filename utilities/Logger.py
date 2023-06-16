@@ -6,7 +6,7 @@ class LogGen:
     def loggen():
         classname = inspect.stack()[1][3]
         logger = logging.getLogger(classname)
-        file = logging.FileHandler("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Logs\\logfile.log")
+        file = logging.FileHandler("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Logs\\logfile.log")
         format = logging.Formatter("%(asctime)s : %(levelname)s :  %(name)s : %(funcName)s: %(message)s")
         file.setFormatter(format)
         logger.addHandler(file)

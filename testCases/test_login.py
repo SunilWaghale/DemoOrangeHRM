@@ -28,11 +28,11 @@ class Test_Url_Login:
         self.log.info("Checking page title")
         if self.driver.title == "OrangeHRM":
             self.log.info("test_Url_001 is Passed ")
-            self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_Url_001_pass.png")
+            self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_Url_001_pass.png")
             assert True
         else:
             self.log.info("test_Url_001 is Failed ")
-            self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_Url_001_fail.png")
+            self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_Url_001_fail.png")
             assert False
         self.driver.close()
         self.log.info("test_Url_001 is Completed ")
@@ -52,7 +52,7 @@ class Test_Url_Login:
         self.log.info("Click on login button")
         if self.lp.login_status() == True:
             self.log.info("test_login_002 is Passed")
-            self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_login_002_pass.png")
+            self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_login_002_pass.png")
             self.lp.Click_Menu_Button()
             self.log.info("Click on menu button")
             self.lp.Click_logout_Button()
@@ -60,7 +60,7 @@ class Test_Url_Login:
             assert True
         else:
             self.log.info("test_login_002 is Failed")
-            self.driver.save_screenshot("C:\\Users\\HP\\Desktop\\Python\\OrangeHRM\\Screenshots\\test_login_002_fail.png")
+            self.driver.save_screenshot("D:\\A A Python Practices Project\\Tushar Sir Python Selenium\\OrangeHRM 15 jun 23\\OrangeHRMNew\\Screenshots\\test_login_002_fail.png")
             assert False
         self.driver.close()
         self.log.info("test_login_002 is Completed")
